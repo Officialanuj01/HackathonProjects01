@@ -132,15 +132,15 @@
     }
   }
   .border-border {
-    @apply border border-transparent; /* Define your custom border styles here */
+    @apply border border-gray-300; /* Define your custom border styles here */
   }
 
   .bg-custom {
-    @apply bg-background; /* Define your custom background styles here */
+    background-color: #f0f0f0;; /* Define your custom background styles here */
   }
 
   .text-foreground {
-    @apply text-foreground; /* Define your custom text styles here */
+    color: #333333; /* Define your custom text styles here */
   }
 
   

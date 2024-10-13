@@ -4,8 +4,7 @@ import { Input } from "./ui/Input"
 import { BarChart3, Calendar, MessageSquare, Menu } from "lucide-react"
 import logo from "../assets/logo.jpg"
 import CampaignUploader from './CampaignUploader'
-import { useNavigate,Link } from 'react-router-dom'
-// import { Link } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function LandingPage() {
@@ -13,7 +12,6 @@ export default function LandingPage() {
   const [currentFeature, setCurrentFeature] = useState(0)
   const [email, setEmail] = useState('')
   const navigate = useNavigate(); 
-  // const navigate = useNavigate(); 
 
   const features = [
     { icon: <Calendar className="h-12 w-12 text-blue-400" />, title: "Intelligent Timing", description: "Automatically determine the optimal time to launch campaigns based on real-time data and historical trends." },
@@ -38,16 +36,10 @@ export default function LandingPage() {
     navigate('/CampaignUploader');  // Navigate to the Get Started page when clicked
   };
 
-  const handleNotificationSender = () => {
-    navigate('/NotificationSender');  // Corrected path
-  };
-
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
       <header className="px-4 lg:px-6 h-14 flex items-center border-b border-gray-800">
         <a className="flex items-center justify-center" href="#">
-          <img src={logo} className="h-6 w-6 text-blue-400" />
-          <span className="ml-2 font-bold text-xl">Lodging Lift</span>
           <img src={logo} className="h-6 w-6 text-blue-400" />
           <span className="ml-2 font-bold text-xl">Lodging Lift</span>
         </a>
@@ -62,9 +54,8 @@ export default function LandingPage() {
             About
           </a>
           <a className="text-sm font-medium hover:text-blue-400 transition-colors" href="#">
-            Notifigation
+            Contact
           </a>
-          <a href="" onClick={handleNotificationSender }>Anuj</a>
         </nav>
         <Button
           className="ml-auto md:hidden"
@@ -89,7 +80,6 @@ export default function LandingPage() {
           <a className="text-sm font-medium hover:text-blue-400 transition-colors" href="#">
             Contact
           </a>
-
         </nav>
       )}
       <main className="flex-1">
@@ -99,7 +89,6 @@ export default function LandingPage() {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none animate-fade-in-down">
                   Maximize Occupancy with Minimize Efforts
-                  Maximize Occupancy with Minimize Efforts
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl animate-fade-in-up">
                   Automate your marketing campaigns, optimize timing, and boost occupancy rates during low seasons with
@@ -107,7 +96,6 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button onClick = {handleGetStarted} className="bg-blue-600 text-white hover:bg-blue-700 transition-colors"> Upload fie to Get Started</Button>
                 <Button onClick = {handleGetStarted} className="bg-blue-600 text-white hover:bg-blue-700 transition-colors"> Upload fie to Get Started</Button>
                 <Button variant="outline" className="text-blue-400 border-blue-400 hover:bg-blue-400 hover:text-gray-900 transition-colors">Learn More</Button>
               </div>
@@ -208,7 +196,6 @@ export default function LandingPage() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-800">
         <p className="text-xs text-gray-400">
-          © 2024 Lodging Lift. All rights reserved.
           © 2024 Lodging Lift. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
