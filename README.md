@@ -9,7 +9,7 @@
 * [Usage](#usage)
 * [API Documentation](#api-documentation)
 * [Contributing](#contributing)
-* [Working in development]
+* [Ongoing development]
 
 ## Introduction
 
@@ -63,7 +63,7 @@ Contributions are welcome! To contribute to Hotel Campaign Optimizer, follow the
 5. Push changes: `git push origin feature/new-feature`
 6. Create a pull request.
 
-## Working in development
+## Ongoing development
 
 [Github Link](https://github.com/Officialanuj01/HackthonBackEnd.git)
 
