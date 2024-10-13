@@ -1,4 +1,4 @@
-@@ -0,0 +1,63 @@
+
 # Lodging Lift (Hotel Campaign Optimizer)
 
 ## Table of Contents
