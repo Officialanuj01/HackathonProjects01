@@ -48,8 +48,8 @@ export default function LandingPage() {
         <a className="flex items-center justify-center" href="#">
           <img src={logo} className="h-6 w-6 text-blue-400" />
           <span className="ml-2 font-bold text-xl">Lodging Lift</span>
-          <img src={logo} className="h-6 w-6 text-blue-400" />
-          <span className="ml-2 font-bold text-xl">Lodging Lift</span>
+          {/* <img src={logo} className="h-6 w-6 text-blue-400" /> */}
+          {/* <span className="ml-2 font-bold text-xl">Lodging Lift</span> */}
         </a>
         <nav className="ml-auto hidden md:flex gap-4 sm:gap-6">
           <a className="text-sm font-medium hover:text-blue-400 transition-colors" href="#">
@@ -64,7 +64,7 @@ export default function LandingPage() {
           <a className="text-sm font-medium hover:text-blue-400 transition-colors" href="#">
             Notifigation
           </a>
-          <a href="" onClick={handleNotificationSender }>Anuj</a>
+          {/* <a href="" onClick={handleNotificationSender }>Anuj</a> */}
         </nav>
         <Button
           className="ml-auto md:hidden"
@@ -99,7 +99,6 @@ export default function LandingPage() {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none animate-fade-in-down">
                   Maximize Occupancy with Minimize Efforts
-                  Maximize Occupancy with Minimize Efforts
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl animate-fade-in-up">
                   Automate your marketing campaigns, optimize timing, and boost occupancy rates during low seasons with
@@ -108,7 +107,7 @@ export default function LandingPage() {
               </div>
               <div className="space-x-4">
                 <Button onClick = {handleGetStarted} className="bg-blue-600 text-white hover:bg-blue-700 transition-colors"> Upload fie to Get Started</Button>
-                <Button onClick = {handleGetStarted} className="bg-blue-600 text-white hover:bg-blue-700 transition-colors"> Upload fie to Get Started</Button>
+                {/* <Button onClick = {handleGetStarted} className="bg-blue-600 text-white hover:bg-blue-700 transition-colors"> Upload fie to Get Started</Button> */}
                 <Button variant="outline" className="text-blue-400 border-blue-400 hover:bg-blue-400 hover:text-gray-900 transition-colors">Learn More</Button>
               </div>
             </div>
