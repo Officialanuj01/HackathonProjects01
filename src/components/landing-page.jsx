@@ -24,7 +24,7 @@ export default function LandingPage() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentFeature((prev) => (prev + 1) % features.length)
-    }, 5000)
+    }, 2000)
     return () => clearInterval(timer)
   }, [])
 
@@ -62,7 +62,7 @@ export default function LandingPage() {
             About
           </a>
           <a className="text-sm font-medium hover:text-blue-400 transition-colors" href="#">
-            Notifigation
+            Notification
           </a>
           {/* <a href="" onClick={handleNotificationSender }>Anuj</a> */}
         </nav>
@@ -187,14 +187,13 @@ export default function LandingPage() {
               </div>
               <div className="w-full max-w-sm space-y-2">
                 <form className="flex space-x-2" onSubmit={handleSubmit}>
-                  <Input
-                    className="max-w-lg flex-1 bg-gray-700 text-white placeholder-gray-400 border-gray-600 focus:border-blue-400"
-                    placeholder="Enter your email"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
+                <input
+                  class=" font-mono ring-1 ring-zinc-400 focus:ring-2 focus:ring-blue-950 outline-none duration-300 placeholder:text-white placeholder:opacity-50 rounded-lg px-4 py-1 shadow-md focus:shadow-lg focus:shadow-blue-300 max-w-lg flex-1 bg-gray-700 text-white placeholder-gray-400 border-gray-600 focus:border-blue-400"
+                  autocomplete="off"
+                  placeholder="Enter email here"
+                  name="text"
+                  type="text"
+                />
                   <Button type="submit" className="bg-green-600 text-white hover:bg-green-700 transition-colors">Subscribe</Button>
                 </form>
                 <p className="text-xs text-gray-400">
